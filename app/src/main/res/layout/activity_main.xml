@@ -6,60 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="No Alarm set"
+        android:textSize="30sp" />
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/button_timepicker"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="confirm" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="open time picker" />
 
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5.5dp"
-        android:layout_marginBottom="10dp"
-        android:background="#8AFFFFFF"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical">
-
-        <Switch
-            android:id="@+id/switch_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:checked="true"
-            android:gravity="right"
-            android:text="Notification"
-            android:textAlignment="center"
-            android:textDirection="rtl"
-
-
-            />
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:gravity="center"
-            android:layout_below="@id/linear"
-            android:orientation="vertical">
-
-
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/picker"
-    android:text="choose time"
-
-
-    />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/timePickerValue"
-                android:text="00:00"/>
-        </LinearLayout>
+        android:layout_below="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="cancel alarm" />
 
 </RelativeLayout>
